@@ -1,0 +1,19 @@
+<div class="container">
+
+ <h1>{{ctrl.greeting}}</h1>
+ <h3>Bus Route</h3>
+ <input type="text" 
+             ng-model="ctrl.myAddress"
+             ng-change="ctrl.showRoute(ctrl.routes)"
+             placeholder="Example: Q22">
+ <div ng-repeat="address in ctrl.addresses">
+    <div>
+        <label>Bus </label>
+        <span ng-bind="address.formatted_address"></span>
+    </div>  
+
+
+ </div>
+
+
+</div>
